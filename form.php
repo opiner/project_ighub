@@ -1,17 +1,17 @@
 <html>
 <body>
 
-Welcome <?php echo $_GET["name"]; ?><br>
-Username: <?php echo $_GET["Username"]; ?>
-Your email address is: <?php echo $_GET["Email"]; ?>
-Message: <?php echo $_GET["Message..."]; 
+Welcome <?php echo $_POST["name"]; ?><br>
+Username: <?php echo $_POST["Username"]; ?>
+Your email address is: <?php echo $_POST["Email"]; ?>
+Message: <?php echo $_POST["Message..."]; 
 
 
-if($_GET['Submit'] == "Submit") 
+if($_POST['Submit'] == "Submit") 
 {
-   $varUsername = $_GET['Username'];
-   $varEmail = $_GET['Email'];
-   $varMessage = $_GET['Message'];
+   $varUsername = $_POST['Username'];
+   $varEmail = $_POST['Email'];
+   $varMessage = $_POST['Message'];
    $errorMessage = "go back";
  
 }
